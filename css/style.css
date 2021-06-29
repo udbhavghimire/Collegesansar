@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.navbar-brand {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.brand-color {
+  color: #6344a4;
+}
+.no-border:focus,
+.no-border:active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.parent {
+  display: block;
+  position: relative;
+  float: left;
+  line-height: 30px;
+}
+
+.parent a {
+  margin: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.parent:hover > ul {
+  display: block;
+  position: absolute;
+  background-color: #f7f7f7;
+  right: 0;
+}
+
+.child {
+  display: none;
+}
+
+.child li {
+  line-height: 40px;
+  width: max-content;
+}
+
+.child li a {
+  color: #000000;
+}
+.parent :hover {
+  color: #6344a4;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  min-width: 10em;
+}
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+  margin-left: 1px;
+}
+
+.expand {
+  font-size: 12px;
+  float: right;
+  margin-right: 5px;
+}
+.searchbar {
+  margin-right: 70px;
+}
