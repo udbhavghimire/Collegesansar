@@ -76,3 +76,13 @@ ul ul ul {
 .searchbar {
   margin-right: 70px;
 }
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 127.5%;
+}
+.btn-brand {
+  background-color: #6344a4;
+  color: white;
+}
