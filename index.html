@@ -15,9 +15,9 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- flickity link -->
-    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+    
+  <link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide.theme.min.css">
 
     <title>College Sansar | Find your dream college</title>
   </head>
@@ -201,64 +201,38 @@
 
 <!-- featured college -->
 <section class="pt-5">
-<div class="container pt-5">
+<div class="container pt-5 pb-5">
   <div class="row">
   <p class="heading vl-left">Featured College</p>
   </div>
-<div class="carousel" data-flickity='{ "groupCells": true }'>
-  <div class="carousel-cell"> 
-    <div class="card" style="width: 18rem;">
-      <img src="image/featured_college.png" class="card-img-top" alt="...">
-      <h5 class="card-title">Card title</h5>
-      <div class="card-body">
-       
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+  <div class="glide pt-3">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides text-center">
+        <li class="glide__slide"><img src="image/college_building.png" class="img-fluid px-4" alt="">
+        <p class="sm-heading px-4 pt-2">Sagarmatha college of Science & technology</p>
+        </li>
+        <li class="glide__slide"><img src="image/college_building.png" class="img-fluid px-4" alt="">
+          <p class="sm-heading px-4 pt-2">Capital College & Research Center</p>
+          </li>
+          <li class="glide__slide"><img src="image/college_building.png" class="img-fluid px-4" alt="">
+            <p class="sm-heading px-4 pt-2">Madan Bhandari Memorial College</p>
+            </li>
+            <li class="glide__slide"><img src="image/college_building.png" class="img-fluid px-4" alt="">
+              <p class="sm-heading px-4 pt-2">Sagarmatha college of Science & technology</p>
+              </li>
+      
+        
+      </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </svg></button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg></button>
     </div>
   </div>
-  <div class="carousel-cell">
-    <div class="card border-0">
-      <img src="image/featured_college.png" class="img-fluid" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Capital college and Research Center</h5>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-cell">
-    <div class="card border-0">
-      <img src="image/featured_college.png" class="img-fluid" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Trininty International College</h5>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-cell">
-    <div class="card border-0">
-      <img src="image/featured_college.png" class="img-fluid" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Sagarmatha college of Science & technology</h5>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-cell">
-    <div class="card border-0">
-      <img src="image/featured_college.png" class="img-fluid" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Capital college and Research Center</h5>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-cell">
-    <div class="card border-0">
-      <img src="image/featured_college.png" class="img-fluid" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Trininty International College</h5>
-      </div>
-    </div>
-  </div>
- 
-</div>
 </div>
 </section>
 
@@ -268,13 +242,20 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
-
-    <script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
-        <script id="rendered-js" >
-  // external js: flickity.pkgd.js
-  //# sourceURL=pen.js
-      </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: 'carousel',
+        perView: 3,
+        breakpoints: {
+          800:{
+            perView: 1
+          }
+        }
+      }
+      new Glide('.glide', config).mount()
+    </script>
+   
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
