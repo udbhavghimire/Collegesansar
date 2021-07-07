@@ -11,6 +11,7 @@
   display: block;
   width: max-content;
   right: -3rem;
+  box-shadow: 2px 12px 11px 4px rgba(53, 52, 52, 0.9);
 }
 .dropdown-submenu {
   position: relative;
@@ -122,7 +123,17 @@
   .small-screen {
     font-size: 24px;
   }
+  .vl-left {
+    margin-left: 20px;
+  }
+  .college-by-name {
+    margin: -5px 0 -5px 0;
+  }
   .video {
     width: fit-content;
+  }
+
+  .classroom {
+    padding-top: 35px;
   }
 } ;
