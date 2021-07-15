@@ -165,4 +165,7 @@
     left: -0.3rem;
     max-width: fit-content;
   }
+  .team-search {
+    width: fit-content;
+  }
 } ;
