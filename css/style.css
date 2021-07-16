@@ -129,6 +129,9 @@
   border: 0px;
   background: #f8f8f8;
 }
+.bg-newsletter {
+  background: #f2f2f2;
+}
 
 @media screen and (max-width: 650px) {
   .nav-search {
@@ -164,8 +167,5 @@
     top: -2rem;
     left: -0.3rem;
     max-width: fit-content;
-  }
-  .team-search {
-    width: fit-content;
   }
 } ;
