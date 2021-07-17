@@ -168,4 +168,11 @@
     left: -0.3rem;
     max-width: fit-content;
   }
+  .small-screen-footer {
+    text-align: justify;
+    padding-top: 30px;
+  }
+  .newsletter-padding {
+    padding-bottom: 2rem;
+  }
 } ;
